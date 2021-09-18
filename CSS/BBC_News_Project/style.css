@@ -17,19 +17,23 @@
 .navbar {
   width: 80%;
 }
+
 .bbc-logo {
   height: 50px;
 }
+
 nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
 }
+
 nav ul li {
   list-style: none;
   padding: 1.2rem;
 }
+
 nav ul li a {
   text-decoration: none;
   color: black;
@@ -38,15 +42,19 @@ nav ul li a {
 .nav-list {
   display: flex;
 }
+
 .menu {
   border-right: 1px solid red;
 }
+
 .sign-in {
   width: 180px;
 }
+
 .fa-caret-down {
   margin-left: 1rem;
 }
+
 #searchbar {
   border: none;
 }
@@ -60,6 +68,7 @@ nav ul li a {
   align-items: flex-start;
   width: 100%;
 }
+
 .menu-bar2 {
   width: 100%;
   display: flex;
@@ -71,13 +80,16 @@ nav ul li a {
   background-color: #b4161b;
   padding: 1rem;
 }
+
 .menu-list {
   width: 80%;
   display: flex;
 }
+
 .menu-list li {
   list-style: none;
 }
+
 .menu-list li a {
   text-decoration: none;
   margin-right: 1.4rem;
@@ -91,9 +103,11 @@ nav ul li a {
   align-items: center;
   margin-top: 2rem;
 }
+
 .main-news {
   width: 70%;
 }
+
 .main-img {
   width: 100%;
 }
@@ -106,6 +120,7 @@ nav ul li a {
   align-items: center;
   width: 80%;
 }
+
 .news-box {
   margin: 1rem;
   width: 300px;
@@ -116,13 +131,16 @@ nav ul li a {
 .news-box .type {
   display: flex;
 }
+
 .news-box .type p:first-child {
   border-right: 1px solid black;
 }
+
 .news-box h4,
 p {
   margin: 0.4rem 0 0.4rem 0;
 }
+
 .news-img {
   width: 100%;
 }
