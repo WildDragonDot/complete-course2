@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+    <title>AJAX</title>
+
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+
+    <style type="text/css">
+
+    </style>
+
+</head>
+
+<body>
+    <p></p>
+    <h3></h3>
+    <h4></h4>
+
+
+    <script type="text/javascript">
+
+        //    Regular Expression
+
+        var regex = /React/;
+        var string = "React is most used Javascript Framework";
+        var result = string.match(regex);
+        $("p").html(result);
+
+        //    use i flag after regex for case insensitive
+        var regex2 = /course/i;
+        var string2 = "This is  Complete web developer CoURSE";
+        var result2 = string2.match(regex2);
+        $("h3").html(result2);
+
+        // Use g(global) flag for multiple occurence of regex
+        var regex3 = /is/g;
+        var string3 = "This is a JS course.This is very useful";
+        var result3 = string3.match(regex3);
+        $("h4").html(result3);
+    </script>
+
+</body>
+
+</html>

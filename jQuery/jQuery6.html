@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui/jquery-ui.css"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+    <style>
+        .draggable {
+            background-color: red;
+            padding: 1.2rem;
+            width: 100px;
+            margin: 1rem;
+            color: white;
+
+        }
+
+        #containment-wrapper {
+            background-color: yellow;
+            width: 80%;
+            height: 300px;
+
+
+        }
+
+        #parent {
+            width: 400px;
+            padding: 3rem;
+            background-color: plum;
+        }
+
+
+        .draggable4 {
+            background-color: rgb(238, 143, 143);
+            width: 100px;
+        }
+
+        #resizable {
+            width: 150px;
+            height: 150px;
+            padding: 0.5em;
+            background-color: powderblue;
+            margin-top: 1rem;
+        }
+    </style>
+    <!-- <script src="jquery-3.6.0.min.js"></script> -->
+</head>
+
+<body>
+
+    <div class="draggable" class="ui-widget-content">
+        <p>Drag me around</p>
+    </div>
+    <div class="draggable draggable1">
+        <p>I can be dragged only vertically</p>
+    </div>
+
+    <div class="draggable draggable2">
+        <p>I can be dragged only horizontally</p>
+    </div>
+    <div id="containment-wrapper">
+        <div class="draggable draggable3">
+            <p>I&apos;m contained within the box</p>
+        </div>
+
+        <div id="parent">
+            <p class="draggable4">I&apos;m contained within my parent</p>
+        </div>
+    </div>
+
+    <div id="resizable">
+        <h3>Resizable</h3>
+    </div>
+
+    <script>
+        $(".draggable").draggable();
+
+        $(".draggable1").draggable({ axis: "y" });
+        $(".draggable2").draggable({ axis: "x" });
+
+        $(".draggable3").draggable({ containment: "#containment-wrapper", scroll: false });
+        $(".draggable4").draggable({ containment: "parent" });
+
+        $("#resizable").resizable();
+
+    </script>
+
+</body>
+
+</html>

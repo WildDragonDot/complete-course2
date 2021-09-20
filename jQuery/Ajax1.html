@@ -1,0 +1,44 @@
+<html>
+
+<head>
+
+    <title>AJAX</title>
+
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+
+    <style type="text/css">
+
+    </style>
+
+</head>
+
+<body>
+    <p></p>
+
+
+    <script type="text/javascript">
+        //data taken from another file
+        // $.get("info.txt", function (data) {
+        //     alert(data)
+        // })
+
+        // when ajax request is successful then done() will return content of another file
+
+        // $.ajax("info.txt").done(function (data) {
+        //     alert(data);
+        // }).fail(function () {
+        //     alert("Sorry,couldn't get data")
+        // });
+
+        // we can add another file content into paragraph 
+        $.ajax("info.txt").done(function (data) {
+            $("p").html(data);
+        }).fail(function () {
+            alert("Sorry,couldn't get data")
+        });
+
+    </script>
+
+</body>
+
+</html>
