@@ -5,6 +5,7 @@ $i=0;
 while($i<sizeof($myArray)){
     echo $myArray[$i];
     echo "<br>";
+    $i++;
 }
 
 
